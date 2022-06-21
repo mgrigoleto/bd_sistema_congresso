@@ -374,7 +374,7 @@ ALTER TABLE material_palestra MODIFY COLUMN material VARCHAR(10) COMMENT 'Materi
 CREATE TABLE classificacao_magna (
                 cod_programa INT NOT NULL,
                 cod_palestrante INT NOT NULL,
-                classificacao VARCHAR(10) DEFAULT magna NOT NULL,
+                classificacao VARCHAR(10) DEFAULT NOT NULL,
                 PRIMARY KEY (cod_programa, cod_palestrante)
 );
 
@@ -390,7 +390,7 @@ ALTER TABLE classificacao_magna MODIFY COLUMN classificacao VARCHAR(10) COMMENT 
 CREATE TABLE classificacao_comum (
                 cod_programa INT NOT NULL,
                 cod_palestrante INT NOT NULL,
-                classificacao VARCHAR(10) DEFAULT comum NOT NULL,
+                classificacao VARCHAR(10) DEFAULT NOT NULL,
                 PRIMARY KEY (cod_programa, cod_palestrante)
 );
 
